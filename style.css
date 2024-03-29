@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+
+}
+
+body {
+    background-color: rgb(13 16 26);
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.logo {
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.navList {
+    display: flex;
+}
+
+.navList a {
+    margin-left: 60px;
+    margin-right: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease;
+}
+
+.navList a:hover {
+    border-bottom: 2px solid white;
+
+}
+
+#menu-icon {
+    display: none;
+    font-size: 35px;
+    z-index: 101;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-icon-acction {
+    display: none;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #121b1d 00%, #611892 30%, #131313 60%);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.hero-text * {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 0 8%;
+}
+
+.hero-img {
+    text-align: center;
+}
+
+.hero-img img {
+    position: relative;
+    border: 3px solid #6e16a8;
+    border-radius: 100%;
+    width: 400px;
+    transition: .3s ease;
+
+}
+
+.hero-img img:hover {
+    box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text a {
+    display: inline-block;
+    background-color: #33333300;
+    border: 1px solid white;
+    padding: 10px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.hero-text a:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 40px;
+
+}
+
+.hero-text a.proyectos {
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.hero-text a.proyectos i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.Redes {
+    position: absolute;
+    top: 50vh;
+    padding: 0 3%;
+    transform: translateY(-40%);
+}
+
+.Redes i {
+    display: block;
+    margin: 30px 0;
+    font-size: 3vh;
+    transition: all 0.5s ease;
+}
+
+.Redes i:hover {
+    background-color: #4d4d4d;
+    padding: 10px;
+    font-size: 5vh;
+
+    border-radius: 100%;
+    transform: translateY(-5px) translateX(-15px);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 8%;
+    right: 6%;
+
+}
+
+.scroll-down i {
+    display: block;
+    padding: 12px;
+    font-size: 5vh;
+    background-color: #121b1d;
+    border-radius: 100%;
+    transition: all .3s ease;
+}
+
+.scroll-down i:hover {
+    transform: translateY(5px);
+}
+
+
+@media (max-width: 992px) {
+    section {
+        padding: 0px 30px;
+    }
+
+    .Redes {
+        display: none;
+    }
+
+    .hero-img img {
+        width: 300px;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+    .navList a {
+        margin-left: 20px;
+
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    #menu-icon-action {
+        display: block;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    section {
+        padding: 0px 20px;
+    }
+
+    .hero {
+        height: 100%;
+        gap: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        padding-top: 50px;
+    }
+
+    .hero-text p {
+        text-align: justify;
+        font-size: small;
+    }
+
+    .hero-text h1 {
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    .hero-text h3 {
+        text-align: center;
+        font-size: large;
+        margin-bottom: 0px;
+    }
+    .navList {
+        display: none;
+    }
+
+    .hero-img img {
+        margin: 0;
+        top: 20%;
+    }
+    
+    .hero-text * {
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .hero-text a {
+        margin-bottom: 0px;
+    }
+
+    .hero {
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: 10px;
+        font-size: 20px
+    }
+}
